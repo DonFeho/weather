@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>WeatherJS</title>
+</head>
+
+<body class="main-body">
+  <nav id="navbar" class="navbar-nav fixed-top navbar-dark bg-dark text-light py-3">
+    <div class="container">
+      <div class="d-flex flex-row justify-content-start">
+        <div class="d-none d-md-block  w-25">
+          <a href="index.html" class="navbar-link">
+            <img src="https://www.kttn.com/wp-content/uploads/2016/10/Weather-free-to-use-cliparts.png"
+              style="max-height: 70px; width: auto;" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="w-50 my-auto">
+          <div class="form-group bg-secondary">
+            <input type="text" value="" id="setCity" class="lead form-control text-center" placeholder="Enter City">
+          </div>
+        </div>
+        <div class="w-25 my-auto">
+          <div class="form-group">
+            <div id="go" class="btn btn-primary btn-outline btn-block">
+              Get Weather
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-stats">
+    <div class="container py-2">
+      <div class="row text-center">
+        <div class="col-lg-8 col-md-6 mx-auto">
+          <h3 class="text-light display-4 mb-1">Weather in
+            <span class="text-lg font-weight-bold text-warning" id="p1"></span>
+          </h3>
+          <p class="mt-2 text-center timeset">
+            <span class="" id='d1'></span>
+          </p>
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item bg-own text-light lead" id=""> Country:
+                  <p class="lead font-weight-bold" id="p2"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Sky:
+                  <p class="lead font-weight-bold" id="p3"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Humidity:
+                  <p class="lead font-weight-bold" id="p4"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Pressure:
+                  <p class="lead font-weight-bold" id="p5"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Temp:
+                  <p class="lead font-weight-bold" id="p6"></p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item bg-own text-light lead" id=""> Coord lat:
+                  <p class="lead font-weight-bold" id="p7"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Coord lon:
+                  <p class="lead font-weight-bold" id="p8"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Wind speed:
+                  <p class="lead font-weight-bold" id="p9"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Temp_max:
+                  <p class="lead font-weight-bold" id="p10"></p>
+                </li>
+                <li class="list-group-item bg-own text-light lead" id=""> Temp_max:
+                  <p class="lead font-weight-bold" id="p11"></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-stats2">
+    <div class="container py-5">
+      <div class="row text-center">
+        <div class="col-lg-12 col-md-6 mt-2 mb-2 py-2">
+          <h3 class="leader-boom">
+            Popular Locations
+          </h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <!-- Berlin -->
+        <div class="col-md-4">
+          <div class="card my-card">
+            <div class="card-title bg-dark text-light mb-0 py-2">
+              <h2 class="leader-mid">
+                Berlin
+              </h2>
+            </div>
+            <img src="https://static.neweuropetours.eu/wp-content/uploads/2018/08/thio-berlin-05-1600x900-2.jpg"
+              alt="Berlin" class="img-fluid">
+            <div class="card-body bg-secondary text-light py-2">
+              <p id="b-info" class="leader d-none">Our 72-hour tour will take you to the most famous landmarks in Berlin
+                and to its most beautiful places. Be guided through a sightseeing tour of Mitte, go shopping on
+                Kurfürstendamm and in City West, and experience neighbourhood life in the districts of Kreuzberg and
+                Friedrichshain.</p>
+            </div>
+            <div class="card-footer bg-dark text-light">
+              <div id="berlin" class="btn btn-info btn-outline" href="#">About City</div>
+              <div id="berlin-gw" class="btn btn-primary btn-outline d-none" href="#">Get Weather</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NY -->
+        <div class="col-md-4">
+          <div class="card my-card">
+            <div class="card-title bg-dark text-light mb-0 py-2">
+              <h2 class="leader-mid">
+                New York
+              </h2>
+            </div>
+            <img
+              src="https://thewallpaper.co//wp-content/uploads/2016/10/new-yorks-statue-of-liberty-full-hd-for-desktop-background-image-free-download-desktop-wallpapers-hd-4k-high-definition-windows-10-colourful-images-download-wallpaper-free-2560x16.jpg"
+              alt="New York" class="img-fluid">
+            <div class="card-body bg-secondary text-light py-2">
+              <p id="ny-info" class="leader">NYC is rightfully known for its nightlife. Whether that means sophisticated
+                cocktail dens, friendly dive bars or bottle-service-only dance clubs, the City’s after-dark
+                entertainment is just as electrifying as it ever was. In this section, find out where to drink, and
+                listen to music—all around.</p>
+            </div>
+            <div class="card-footer bg-dark text-light">
+              <div id="ny" class="btn btn-info btn-outline" href="#">About City</div>
+              <div id="ny-gw" class="btn btn-primary btn-outline" href="#">Get Weather</div>
+            </div>
+          </div>
+        </div>
+        <!-- Tokyo -->
+        <div class="col-md-4">
+          <div class="card my-card">
+            <div class="card-title bg-dark text-light mb-0 py-2">
+              <h2 class="leader-mid">
+                Tokyo
+              </h2>
+            </div>
+            <img src="https://images8.alphacoders.com/501/thumb-1920-501447.jpg" alt="New York" class="img-fluid">
+            <div class="card-body bg-secondary text-light py-2">
+              <p id="t-info" class="leader d-none">This annual festival, named "Wa no Akari x Hyakudan Kaidan" in
+                Japanese, showcases artwork enhanced with creative lighting. "Wa no Akari" refers to the aesthetics of
+                Japanese illumination, while "Hyakudan Kaidan" refers to the venue. Hotel Gajoen, "Palace of the Dragon
+                God" in the 20th century.</p>
+            </div>
+            <div class="card-footer bg-dark text-light">
+              <div id="tokyo" class="btn btn-info" href="#">About City</div>
+              <div id="tokyo-gw" class="btn btn-primary d-none" href="#">Get Weather</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="bg-dark text-center text-light py-3">
+    <p class="lead font-weight-bold">
+      WApp 2019 &copy; All rights reserved.
+    </p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="weather.js"></script>
+  <script src="ui.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

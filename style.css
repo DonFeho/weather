@@ -1,0 +1,61 @@
+.bg-own {
+    background: rgba(97, 94, 94, 0.789);
+}
+
+body {
+    background: url(https://www.monitor.bg/web/files/articles/143804/gallery/thumb_1200x630_1920x1080.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.card {
+    border: none !important;
+}
+
+.timeset {
+    color: rgb(241, 198, 89);
+    font-size: 1.2rem;
+
+}
+
+.container-stats {
+    padding: 8rem 0 5rem 0;
+    background: rgba(128, 128, 128, 0.137);
+}
+
+.container-stat2 {
+    padding: 3rem 0 5rem 0;
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.leader {
+    color: whitesmoke;
+    font-size: 0.9rem;
+}
+
+.leader-mid {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 10px lightgray;
+}
+
+.leader-boom {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px lightgray;
+}
+
+
+.my-card:hover {
+       
+    box-shadow: 2px 2px 20px 2px rgb(206, 199, 199);
+
+  
+}
+
+
